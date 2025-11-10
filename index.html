@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramon ❤️ Laura - 1 ano de amor</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="background-music" src="Lovers Rock - TV Girl.mp3" loop></audio>
+    <button id="music-toggle">🔇</button>
+
+    <header id="hero">
+        <div id="floating-hearts-container"></div>
+        <div class="hero-content">
+            <h1 class="reveal">Ramon ❤️ Laura</h1>
+            <h2 class="reveal reveal-delay-1">1 ano de amor</h2>
+            <p class="reveal reveal-delay-2">Desde 16/11/2024</p>
+            <p id="days-counter" class="reveal reveal-delay-3">Calculando dias...</p>
+            <button id="enter-button" class="reveal reveal-delay-4">Entrar no Presente</button>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <section id="timeline" class="wrapper">
+            <h2>Nossa História</h2>
+            <div class="timeline-container">
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <h3>Nosso primeiro beijo</h3>
+                        <p>Praça da Juventude</p>
+                        <span class="timeline-date">Início de Tudo</span>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <h3>Primeiro encontro oficial</h3>
+                        <p>Shopping</p>
+                        <span class="timeline-date">O "Sim"</span>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <h3>Primeiro presente</h3>
+                        <p>Vaso de flores</p>
+                        <span class="timeline-date">Lembrança</span>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <h3>Primeira data comemorativa</h3>
+                        <p>Natal</p>
+                        <span class="timeline-date">Juntos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="wrapper">
+            <h2>Nossas Memórias</h2>
+            <div class="gallery-controls reveal">
+                <label for="photo-upload" class="custom-file-upload">Adicionar Foto</label>
+                <input type="file" id="photo-upload" accept="image/*" multiple>
+            </div>
+            <div id="gallery-grid" class="reveal">
+                <div class="gallery-item placeholder"><span>R ❤️ L</span></div>
+                <div class="gallery-item placeholder"><span>1 ano</span></div>
+                <div class="gallery-item placeholder"><span>Amor</span></div>
+            </div>
+        </section>
+
+        <section id="quiz" class="wrapper">
+            <h2>Quiz do Amor</h2>
+            <p class="reveal">Será que você lembra de tudo, minha lindona?</p>
+            <form id="quiz-form" class="reveal">
+                <div class="quiz-question">
+                    <p>1. Quando e onde demos nosso primeiro beijo?</p>
+                    <label><input type="radio" name="q1" value="errado1"> No parque</label>
+                    <label><input type="radio" name="q1" value="Praça da Juventude"> Praça da Juventude</label>
+                    <label><input type="radio" name="q1" value="errado2"> Na sua casa</label>
+                </div>
+                <div class="quiz-question">
+                    <p>2. Para onde saímos juntos primeiro oficialmente namorando?</p>
+                    <label><input type="radio" name="q2" value="Shopping"> Shopping</label>
+                    <label><input type="radio" name="q2" value="errado1"> Cinema</label>
+                    <label><input type="radio" name="q2" value="errado2"> Restaurante</label>
+                </div>
+                <div class="quiz-question">
+                    <p>3. Qual foi meu primeiro presente pra você?</p>
+                    <label><input type="radio" name="q3" value="errado1"> Chocolate</label>
+                    <label><input type="radio" name="q3" value="errado2"> Ursinho</label>
+                    <label><input type="radio" name="q3" value="Vaso de flores"> Vaso de flores</label>
+                </div>
+                <div class="quiz-question">
+                    <p>4. Qual data comemorativa nós passamos juntos primeiro?</p>
+                    <label><input type="radio" name="q4" value="Natal"> Natal</label>
+                    <label><input type="radio" name="q4" value="errado1"> Ano Novo</label>
+                    <label><input type="radio" name="q4" value="errado2"> Páscoa</label>
+                </div>
+                <div class="quiz-question">
+                    <p>5. Você me ama?</p>
+                    <label><input type="radio" name="q5" value="sim"> Sim</label>
+                    <label><input type="radio" name="q5" value="muito"> Muito</label>
+                    <label><input type="radio" name="q5" value="lógico"> Lógico</label>
+                    <label><input type="radio" name="q5" value="com certeza"> Com certeza</label>
+                </div>
+                <button type="submit" class="quiz-submit">Verificar Respostas</button>
+            </form>
+        </section>
+
+        <section id="letter" class="wrapper">
+            <div class="letter-container reveal">
+                <h2>Carta para Laura</h2>
+                <div id="typewriter-content">
+                    </div>
+            </div>
+        </section>
+
+        <section id="guestbook" class="wrapper">
+            <h2>Livro de Recados</h2>
+            <p class="reveal">Deixe uma mensagem para nós (ou para eu ler depois!)</p>
+            <div class="guestbook-form reveal">
+                <textarea id="guestbook-entry" placeholder="Escreva seu recado aqui, amor..."></textarea>
+                <button id="save-message">Salvar Recado</button>
+            </div>
+            <div id="messages-list" class="reveal">
+                </div>
+            <div class="guestbook-controls reveal">
+                <button id="export-txt">Exportar Recados (.txt)</button>
+                <button id="clear-messages">Apagar Tudo</button>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="secret-game" class="game-overlay">
+        <div id="game-container">
+            <div id="game-score">Pontos: 0</div>
+            <div id="game-message">Digite "momoh" para começar</div>
+            <button id="close-game">Fechar Jogo</button>
+        </div>
+    </div>
+
+    <div id="quiz-success-modal" class="modal-overlay">
+        <div id="confetti-container"></div>
+        <div class="modal-content">
+            <h2>Parabéns amor!</h2>
+            <p>Parece que você acertou todas, como minha lindona é inteligente né?</p>
+            <p>Você é a mulher da minha vida e esse é só o nosso primeiro ano de muitos.</p>
+            <p>Te amo, Laura.</p>
+            <a href="path/to/seu/presente.zip" download="Presente_Ramon_para_Laura.zip" class="download-button">Baixar Presente</a>
+            <button id="close-modal">Fechar</button>
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox-overlay">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
